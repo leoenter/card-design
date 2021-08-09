@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      max-width:1440px;
+      margin: auto;
+      width: 80%;
+      margin: auto;
+      background: black;
+      padding-bottom: 50px;
+      padding-top: 50px;
+
+      }
+      .card {
+
+      min-width: 50%;
+      width: 60%;
+      margin: auto;
+       border: 1px solid;
+    }
+     
+         h1 {
+      color:hsl(0, 0%, 100%) ;
+      font-family:'Inter', sans-serif;
+      
+      font-size: 1.2rem;
+      
+     }
+     .clr-purple {
+      color:hsl(277, 64%, 61%) ;
+     }
+
+     p {
+     color:hsla(0, 0%, 100%, 0.75);
+      font-size: .6rem;
+      font-family: 'Inter', sans-serif;
+       margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 12px;
+        line-height: 1.5;
+       
+     }
+     .stats {
+      color: hsl(0, 0%, 100%);
+      font-size: 15px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      
+
+      
+       }
+     
+     .stat-head {
+      color:hsla(0, 0%, 100%, 0.6);
+      text-transform: uppercase;
+      font-size: 8px;
+      font-family: 'Inter', sans-serif;
+      letter-spacing: 1px;
+      
+     }
+          
+     
+     .img-div {
+      width: 100%;
+      background-color:hsl(277, 64%, 61%) ;
+
+      }
+    
+     .img-div img {
+      width: 100%;
+      display: block;
+      opacity: 0.5;
+      object-fit: cover;
+      
+     }
+
+     main {
+      width: 100%;
+      text-align: center;
+    padding: 20px;
+      }
+    
+     section {
+      display: flex;
+      justify-content: center;
+      
+       }
+     
+     .blue {
+      background-color:hsl(244, 38%, 16%); ;
+     }
+     
+     ul {
+     display: flex;
+     flex-direction: column;
+     
+     width: 30%;
+     text-align: center;
+         }
+    
+       ul li {
+        list-style: none;
+        margin-bottom: 20px;
+
+            }
+    
+ @media(min-width: 600px){
+  ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+  ul li {
+    margin-left: 10px;
+  }
+ }
+
+ 
+
+ @media(min-width: 1440px) {
+ .container {
+  display: flex;
+  margin: auto;
+  padding-left: 10px;
+
+ }
+ .card {
+  display: flex;
+  text-align: justify;
+  margin: auto;
+}
+
+ main,section{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  
+  text-align: left;
+ } 
+p {
+  
+  width: 70%;
+  margin-left: -1px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  width: 67%;
+  margin-top: 20px;
+
+}
+ ul{
+  flex-direction: row;
+  justify-content: flex-start;
+   
+   width: 60%;
+
+  
+
+   }
+
+ ul li {
+  text-align: left;
+  margin-left: 20px;
+
+ }
+ 
+ header {
+ order: 1;
+ }
+ }
+
+
+    
+
+    
+
+  </style>
+</head>
+<body>
+
+ 
+
+  <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Leonel</a>.
+  </div>
+
+  <div class="container bg-black">
+    <div class="card ">
+      
+      <header>
+        <div class="img-div ">
+          
+          <img src="images/image-header-mobile.jpg" alt="women working office">
+      
+        </div>
+      </header>
+    
+    <div class="blue">
+    <main>
+        
+          <div>
+            <h1>Get <span class="clr-purple">insights</span> that help your business grow.</h1>
+          </div>
+          
+          <div>
+            <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+    experience, and overall efficiency.</p>
+          </div>
+    </main>
+
+    <section >
+        <ul>
+          <li>
+            <span class="stats">
+              10k+
+            </span>
+            <span class="stat-head">
+              Companies
+            </span>
+          </li>
+
+          <li>
+              <span class="stats">
+                314
+              </span>
+              <span class="stat-head">
+                templates
+              </span>
+          </li>
+
+            <li>
+              <span class="stats">
+                12M+
+              </span>
+              <span class="stat-head">
+                Queries
+              </span>
+          </li>
+
+          
+        </ul>
+      </div>
+      
+
+
+    </section>
+  
+
+
+  
+
+
+
+      </div><!--end blue-->
+    </div><!--end card-->
+  </div><!--end container-->
+
+
+
+
+</body>
+</html>
